@@ -11,23 +11,23 @@
     margin: 1%;
     padding: 1%;
   }
-   .arrow-margin {
+  .player {
+    display:flex;
+    flex-direction:row;
+    background-color: black;
+  }
+  .arrow-margin {
     flex-grow: 1;
    }
-  .player {
+  #player {
     display: flex;
     flex-direction: column;
     width: 800px;
     height: 600px;
     box-shadow: 0 0 20px rgba(0,0,0,1);
   }
-  .player-control {
-    display:flex;
-    flex-direction:row;
-    background-color: black;
-  }
   .js-video-container {
-  flex-grow: 1;
+    flex-grow: 1;
   }
   </style>
   <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
@@ -36,9 +36,9 @@
 </head>
 
 <body>
-<div class="player" id="player">
+<div id="player">
   <div class="js-video-container"></div>
-  <div class="player-control">
+  <div class="player">
     <button class="js-play-button player-control"><i class="fa fa-play" aria-hidden="true"></i></button>
     <button class="js-pause-button player-control" hidden ><i class="fa fa-pause" aria-hidden="true"></i></button>
     <button class="js-volume-button player-control"><i class="fa fa-volume-off" aria-hidden="true"></i></button>
