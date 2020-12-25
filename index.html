@@ -18,21 +18,21 @@
     margin: 1%;
     padding: 1%;
   }
-  .player {
-    display:flex;
-    flex-direction:row;
-    background-color: black;
-  }
-  .move-arrow-right {
-    flex-grow: 1;
-   }
-  #player {
+  .player-content {
     display: flex;
     flex-direction: column;
     width: 800px;
     height: 600px;
     box-shadow: 0 0 20px rgba(0,0,0,1);
   }
+  .player-control-main {
+    display:flex;
+    flex-direction:row;
+    background-color: black;
+  }
+  .empty-block-to-align-arrow-right {
+    flex-grow: 1;
+   }
   .video-container {
     flex-grow: 1;
   }
@@ -47,14 +47,14 @@
 </head>
 
 <body>
-<div id="player">
+<div id=player class="player-content">
   <div class="js-video-container video-container"></div>
-  <div class="player">
+  <div class="player-control-main">
     <button class="js-play-button player-control"><i class="fa fa-play" aria-hidden="true"></i></button>
     <button class="js-pause-button player-control" hidden ><i class="fa fa-pause" aria-hidden="true"></i></button>
     <button class="js-volume-button player-control"><i class="fa fa-volume-off" aria-hidden="true"></i></button>
     <button class="js-mute-button player-control" hidden><i class="fa fa-volume-up" aria-hidden="true"></i></button>
-    <div class="move-arrow-right"></div>
+    <div class="empty-block-to-align-arrow-right"></div>
     <button class="js-fullscreen-button player-control"><i class="fa fa-expand" aria-hidden="true"></i></button>
   </div>
 </div>
