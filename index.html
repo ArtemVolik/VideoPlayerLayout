@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
 <link rel="manifest" href="./favicon/site.webmanifest">
 <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta charset="utf-8">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
-  <style type="text/css">
+  <style>
   .player-control {
     border-style: hidden;
     color: white;
@@ -41,9 +42,8 @@
 }
 
   </style>
-  <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
   <title>Пример подключения плеера</title>
-  <meta charset="utf-8">
 </head>
 
 <body>
@@ -62,7 +62,7 @@
   <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
   <script src="player.js"></script>
 
-  <script type="text/javascript">
+  <script>
     createPlayer({
       elementId: 'player',
       src: 'https://dvmn.org/media/filer_public/78/db/78db3456-3fd3-4504-9ed9-d2d1fd843c0b/highest_peak.mp4',
