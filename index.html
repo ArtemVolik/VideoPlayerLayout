@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
@@ -24,6 +25,7 @@
     width: 800px;
     height: 600px;
     box-shadow: 0 0 20px rgba(0,0,0,1);
+    margin: 8px 8px 8px 8px;
   }
 
   .player-control-main {
@@ -48,6 +50,9 @@
     width: 40px;
   }
 
+  .player-control:focus {
+    outline: none;
+  }
   .viewing-panel {
     display: flex;
     justify-content: flex-between;
@@ -78,6 +83,11 @@
       padding: 4px 0px 5px 1px;
       }
 
+  .fa-pause {
+      margin: -2px 10px 1px 3px;
+      padding: 4px 0px 5px 1px;
+  }
+
   .fa-volume-up {
       margin: -2px 5px 1px -6px;
       padding: 4px 5px 5px 5px;
@@ -105,11 +115,15 @@
   .video-duration {
     margin: 10px -3px 5px 5px;
   }
+
   .slider {
     margin: 3px -8px 0px 4px;
     background-color: red;
     height: 5px;
     border-radius:3px;
+    transition-property:width;
+    transition-duration: 1s;
+    transition-timing-function: linear;
   }
 
   .dot {
@@ -124,9 +138,6 @@
   transition-duration: .3s;
   transition-timing-function: ease-out;
   }
-
-
-
 
   </style>
   <link rel="stylesheet" href="./css/font-awesome.min.css">
@@ -153,7 +164,7 @@
       <div class="js-duration time video-duration"></div>
     </div>
     <div class="right-buttons">
-      <button class="js-fullscreen-button player-control"><i class="fa fa-expand" aria-hidden="true"></i></button>
+      <button class="js-fullscreen-button player-control"><i class="fa fa-expand" aria-hidden="true"></i></button></div>
     </div>
     <div class="btn-wrapper">
   </div>
